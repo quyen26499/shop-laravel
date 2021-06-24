@@ -1,0 +1,555 @@
+body {
+    background: black;
+    color:rgba(255, 255, 255, 0.9);
+    width: 100%;
+    height: 800px;
+    position: relative;
+    padding: 0px 0px;
+}
+
+@media all and (max-width: 100%){}
+
+/* navbar */
+
+.navbar {
+    background-color: #222222;
+    width: 100%;
+    height: 65px;
+    position: relative;
+    top: 0px;
+    z-index: 1;
+}
+.navbar ul {
+    list-style-type: none;
+    padding: 0px;
+}
+.navbar ul li {
+    display: inline;
+}
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar ul li img {
+    display: block;
+    position: absolute;
+    width: 100px;
+    height: 45px;
+    top: 10px;
+    bottom: 0px;
+    left: 63px;
+    right: 0px;
+}
+.navbar ul li button {
+    display: block;
+    position: absolute;
+    right: 90px;
+    background-color: #222222;
+    color: #ff3366;
+    text-decoration: none;
+    text-align: center;
+    width: 100px;
+    height: 45px;
+    top: 10px;
+    letter-spacing: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+
+    border-radius: 30px;
+    border: 2px solid #ff3366;
+    transition-duration: 0.4s;
+}
+.navbar ul li button:hover {
+    background-color: #ff3366;
+    color: white;
+}
+
+/* side bar and directive button */
+.leftSideBar {
+    position: fixed;
+    left: 0px;
+    top: 230px;
+    width: 240px;
+    height: 340px;
+    background-color: #222222;
+    border: 1px solid #464646;
+}
+
+.leftSideBar ul {
+    list-style: none;
+}
+.leftSideBar ul li {
+    padding: 20px 0px;
+}
+.leftSideBar ul li a {
+    background-color: #222222;
+    color:white;
+    padding-left: 40px;
+    border: 2px solid black;
+    font-family: Arial;
+    width: 250px;
+    height: 63px;
+    left: 0px;
+    font-size: 17px;
+    letter-spacing: 4px;
+    border-radius: 30px;
+    transition-duration: 0.4s;
+}
+.leftSideBar ul li a:hover {
+    background-color: #ff3366;
+    color: white;
+}
+#btnTP {
+    position: absolute;
+    left: -38px;
+    top: 60px;
+}
+
+#btnHTP {
+    position: absolute;
+    left: -38px;
+    top: 140px;
+}
+
+#btnTT {
+    position: absolute;
+    left: -38px;
+    top: 220px;
+}
+
+#btnTP:focus {
+    border: 2px solid #ff3366;
+    color: #ff3366;
+}
+#btnHTP:focus {
+    border: 2px solid #ff3366;
+    color: #ff3366;
+}
+#btnTT:focus {
+    border: 2px solid #ff3366;
+    color: #ff3366;
+}
+
+/* rank table */
+.rank {
+    position: absolute;
+    top: 230px;
+    right: 5px;
+    width: 330px;
+    height: 340px;
+    border: 2px solid #464646;
+    background-color: #222222;
+}
+.rank table {
+    font-size: 20px;
+}
+
+
+.rank table th {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 80px;
+}
+.rank table td {
+    padding-top: 10px;
+    height: 40px;
+    padding-left: 40px;  
+}
+
+.rank i {
+    position: absolute;
+    top: 350px;
+    left: 160px;
+}
+
+/* typing */
+
+.typing {
+    position: absolute;
+    top: 250px;
+    left: 350px;
+    right: 1446px;
+    width: 1050px;
+}
+.typing select {
+    background-color: #222222;
+    color: white;
+    border: none;
+    width: 200px;
+    height: 50px;
+    font-size: 25px;
+    border-radius: 10px;
+    font-family: Arial;
+    padding: 0px 30px;
+}
+
+#startButton {
+    position: absolute;
+    margin-left: 0px;
+    background-color: #222222;
+    width: 100px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+}
+
+
+#text {
+    position: absolute;
+    top: 80px;
+    left: 0px;
+    width: 67%;
+    height: 80px;
+    color: white;
+    background-color: #222222;
+    border: 2px solid #464646;
+}
+
+#textTest {
+    position: absolute;
+    top: 80px;
+    left: 0px;
+    width: 67%;
+    height: 80px;
+    color: white;
+    background-color: #222222;
+    border: 2px solid #464646;
+}
+
+.typing input {
+    position: absolute;
+    left: 0px;
+    top: 200px;
+    width: 67%;
+    height: 50px;
+    font-size: 25px;
+    font-family: Arial;
+    border: 2px solid #ff3366;
+    border-radius: 10px;
+}
+.time {
+    position: absolute;
+    top: 0px;   
+    left: 120px;
+    width: 250px;
+    height: 50px;
+    font-size: 25px;
+    font-family: Arial;
+    background-color: #222222;
+    border-radius: 10px;
+}
+.time p {
+    position: relative;
+    text-align: center;
+    top: 10px;
+}
+.resetButton {
+    position: absolute;
+    top: 0px;
+    left: 390px;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+}
+.resetButton button{
+    display: block;
+    text-decoration: none;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: #222222;
+}
+
+/* score modal */
+#scoreModal {
+    display: none; /* mặc định được ẩn đi */
+    position: fixed; /* vị trí cố định */
+    z-index: 1; /* Ưu tiên hiển thị trên cùng */
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 145%; 
+    overflow: auto;
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+#modalContent {
+    background-color: #222222;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 23%;
+    height: 40%;
+}
+#modalContent h2{
+    text-align: center;
+}
+#modalContent table{
+    font-size: 25px;
+    font-family: Arial;
+}
+#modalContent table td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+}
+#closeModal {
+    display: block;
+    position: absolute;
+    background-color: #222222;
+    color: #ff3366;
+    text-decoration: none;
+    text-align: center;
+    width: 120px;
+    height: 50px;
+    top: 430px;
+    left: 700px;
+    letter-spacing: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+
+    border-radius: 30px;
+    border: 2px solid #ff3366;
+    transition-duration: 0.4s;
+}
+#closeModal:hover {
+    background-color: #ff3366;
+    color: white;
+}
+
+/* Login */
+
+#Logincontainer {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: none;
+    z-index: 1; /* Sit on top */
+    /* background-color: rgb(0,0,0); Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    animation: fadeInLogin linear 0.2s;
+}
+
+@keyframes fadeInLogin {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.loginbox {
+    
+    background-color:#222222 ;
+    border: 1px solid  #5a5a5a;
+    border-radius: 5px;
+    position: fixed;
+    top: 50px;
+    left: 484px;
+    width: 550px;
+    height:650px;
+    text-align: center;
+}
+.loginbox input[type="text"],.loginbox input[type = "password"]{
+    background: none;
+    display: block;
+    margin: 0px auto;
+    text-align: left;
+    border: 1px solid #5a5a5a;
+    padding: 15px 10px;
+    width: 320px;
+    outline: none;
+    color: white;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.t1 i{
+    color: #ff3366;
+    position: absolute;
+    right: 135px ;
+    top: 275px;
+}
+.t2 i{
+    color: #ff3366;
+    position: absolute;
+    right: 135px ;
+    top: 385px;
+}
+.loginbox h1{
+    color: white;
+    padding: 30px 0px 115px;
+    font-size: 50px;
+    text-align: center;
+    font-family: Arial;
+}
+.loginbox form p{
+    margin: 20px 115px 12px;
+    padding: 0;
+    font-weight: bold;
+    text-align: left;
+    color: white;
+    font-family: arial;
+}
+.loginbox form button{
+    position: absolute;
+    right: 115px;
+    top: 130px;
+    background-color: #222222; 
+    border: 2px solid #ff3366;
+    border-radius: 5px;
+    color: #ff3366;
+    padding: 18px 10px; 
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    letter-spacing: 4px ;
+    transition: color 0.5s;
+    width: 320px;
+    font-family: Arial;
+}
+.loginbox form button:hover{
+    color: white;
+    background-color: #ff3366;
+}
+.check-box{
+    margin: 38px 8px 25px -295px;
+}
+span{
+    color: white;
+    font-size: 18px;
+    position: absolute; 
+    font-family: Arial;
+    bottom: 160px;
+}
+.submit-btn{
+    width: 30%;
+    padding: 18px 10px;
+    cursor: pointer;
+    display: block;
+    margin: 15px 120px;
+    background: #ff3366;
+    letter-spacing: 4px;
+    border-radius: 5px;
+    color: #fff;
+    border: none;
+}
+.submit-btn:hover{
+    color: black;
+    background-color: white;
+}
+.sign-up{
+    margin-top: -10px 115px 0px 20px;
+    text-align:  center;
+    font-size: 18px;
+    color: #fff;
+}
+.forgot-password{
+    position: absolute;
+    top: 540px;
+    right: 115px;
+    text-decoration: none;
+    color: #ff3366;
+}
+a:hover{
+    color: white;
+}
+.s1 {
+    color: #ff3366;
+    text-decoration: none;
+} 
+
+html{
+    scroll-behavior: smooth;
+}
+
+.HowToType {
+    background: black;
+    color:rgba(255, 255, 255, 0.9);
+    left: 292px;
+    width: 74%;
+    height: 680px;
+    position: relative;
+    padding: 0px 0px;
+    top: 710px;
+}
+
+.HowToType h3{
+    font-size: 18px;
+}
+
+.HowToType h2{
+    font-size: 21px;
+}
+
+.HowToType p{
+    font-size: 15px;
+    text-align: justify;
+}
+
+.TypingTest {
+    position: absolute;
+    top: 1500px;
+    left: 80px;
+    right: 1446px;
+    width: 1050px;
+    height: 730px;
+}
+
+
+.TypingTest #startButton {
+    position: absolute;
+    margin-left: 0px;
+    background-color: #222222;
+    width: 100px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+}
+
+
+.TypingTest #text {
+    position: absolute;
+    top: 80px;
+    left: 0px;
+    width: 67%;
+    height: 80px;
+    color: white;
+    background-color: #222222;
+    border: 2px solid #464646;
+}
+
+.TypingTest .typing input {
+    position: absolute;
+    left: 0px;
+    top: 200px;
+    width: 67%;
+    height: 50px;
+    font-size: 25px;
+    font-family: Arial;
+    border: 2px solid #ff3366;
+    border-radius: 10px;
+}
+
+.TypingTest .resetButton {
+    position: absolute;
+    top: 250px;
+    left: 470px;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+}
+.TypingTest .resetButton button{
+    display: block;
+    text-decoration: none;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: #222222;
+}
+
